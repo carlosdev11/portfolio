@@ -8,7 +8,6 @@
 html{
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
-    background: linear-gradient(135deg, #4a00e0, #8e2de2);
 }
 
 /* MENU */
@@ -90,276 +89,322 @@ html{
     background-color: yellow;
 }
 
-/* SECCION I N I C I O */
-.inicio{
-    background: transparent;
+/* SECCION INICIO/SOBRE MI UNIFICADA */
+.inicio {
+    background: #eaeaea;
     background-size: cover;
-    height: 100vh;
     color: #fff;
+    padding: 50px 20px;
     display: flex;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
 }
-.inicio .contenido-banner{
+
+.inicio-contenido {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Estilos de contenido para la parte izquierda */
+.contenido-banner {
+    flex: 1;
     padding: 20px;
-    background-color: #1e2326;
-    max-width: 350px;
-    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
-    border-radius: 40px;
 }
-.inicio .contenido-banner img{
-    margin-top: 40px;
-    border: 10px solid #1e2326;
-    display: block;
+
+.contenido-banner img {
+    border: 8px solid #333;
     width: 80%;
-    margin: auto;
-    border-radius: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
-.inicio .contenido-banner h1{
-    margin-top: 40px;
-    font-size: 42px;
-    font-family: 'Righteous';
+
+.contenido-banner h1 {
+    font-size: 46px;
+    color: #333;
+    font-family: 'Righteous', sans-serif;
+    margin-top: 10px;
 }
-.inicio .contenido-banner h2{
-    font-size: 15px;
-    font-weight: normal;
+
+.contenido-banner h2 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 15px;
 }
-.inicio .contenido-banner .redes a{
-    color: #fff;
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid #fff;
-    border-radius: 100%;
+
+.redes {
+    margin-top: 10px;
+}
+
+.redes a {
+    color: #1244cc;
+    border: 2px solid #1244cc;
+    border-radius: 50%;
     width: 42px;
     height: 42px;
     line-height: 42px;
-    margin: 5px 5px;
+    margin: 0 5px;
     font-size: 20px;
-    transition: .3s;
+    transition: background-color 0.3s, color 0.3s;
 }
-.inicio .contenido-banner .redes a:hover{
-    background-color: yellow
-}
-.sobremi{
-    background: transparent;
-    color: #fff;
-    padding: 50px 20px;
-}
-.sobremi .contenido-seccion{
-    background: #1e2326;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
-.sobremi h2{
-    font-size: 40px;
-    color: yellow;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 15px 0;
 
+.redes a:hover {
+    background-color: #1244cc;
+    color: #1e2326;
 }
-.sobremi .contenido-seccion p{
-    font: 27px;
-    line-height: 22px;
-    margin-bottom: 40px;
-    margin-left: 100px;
-    text-align: left;
-}
-.sobremi .contenido-seccion p span{
-    color: yellow;
-    font-weight: bold;
-}
-.sobremi .fila{
-    display: flex;
-}
-.sobremi .fila .col
-{
-    width: 50%;
-}
-.sobremi .fila .col h3{
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-left: 100px;
-    text-align: left;
-}
-.sobremi .fila .col2 h3{
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-left: 0px;
-    text-align: left;
-}
-.sobremi .fila .col ul{
-    list-style: none;
-    margin-left: 100px;
-    text-align: left;
-}
-.sobremi .fila .col ul li{
-    margin: 12px 0;
-}
-.sobremi .fila .col ul li strong{
+
+.cv-btn {
     display: inline-block;
-    color: yellow;
-    width: 130px;
-}
-.sobremi .fila .col ul li span{
-    background-color: yellow;
-    padding: 3px;
+    margin-top: 15px;
+    padding: 10px 30px;
+    font-size: 18px;
     font-weight: bold;
-    border-radius: 5px;
+    color: white;
+    background-color: #1244cc;
+    border-radius: 25px;
+    transition: background-color 0.3s;
 }
-.sobremi .fila .col2 .contenedor-intereses{
-    display: flex;
-    flex-wrap: wrap;
+
+.cv-btn:hover {
+    background-color: #ffffff;
+    color: #1244cc;
+}
+
+/* Estilos de contenido para la parte derecha */
+.contenido-sobre-mi {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.contenido-sobre-mi h2 {
+    font-size: 36px;
+    color: #1244cc;
+    font-family: 'Righteous', sans-serif;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contenido-sobre-mi p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.contenido-sobre-mi p span {
+    color: #1244cc;
+    font-weight: bold;
+}
+
+.datos-personales {
     margin-top: 20px;
 }
-.sobremi .fila .col2 .contenedor-intereses .interes{
-    width: 100px;
-    height: 100px;
-    background-color: #252A2E;
-    border-radius: 10px;
-    margin: 0 15px 15px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: .3s;
-}.sobremi .fila .col2 .contenedor-intereses .interes:hover{
-    background-color: yellow;
+
+.datos-personales h3 {
+    font-size: 24px;
+    color: #1244cc;
+    margin-bottom: 15px;
 }
-.sobremi .fila .col2 .contenedor-intereses .interes i{
-    font-size: 30px;
-    margin-bottom: 10px;
+
+.datos-personales ul {
+    list-style: none;
+    padding: 0;
+    color: #ffffff;
 }
+
+.datos-personales ul li {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.datos-personales ul li strong {
+    color: #1244cc;
+    width: 150px;
+    display: inline-block;
+}
+
+
 
 
 /* SECCION CURRICULUM */
-.curriculum{
-    background: transparent;
-    color: #fff;
+.curriculum {
     padding: 50px 20px;
+    background-color: #eaeaea; /* Color de fondo claro similar a la sección de certificados */
+    color: #333; /* Color de texto oscuro */
 }
-.curriculum .contenido-seccion{
-    background: #1e2326;
-    color: white;
+
+.curriculum .contenido-seccion {
+    background-color: #eaeaea; /* Fondo blanco para la tarjeta principal */
+    color: #333; /* Texto en color oscuro */
     padding: 50px 20px;
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.curriculum h2{
+
+.curriculum h2 {
     font-size: 40px;
-    color: yellow;
-    font-family: 'Righteous';
+    color: #333; /* Color oscuro para el título */
+    font-family: 'Righteous', sans-serif;
     text-align: center;
     padding: 20px 0;
+    margin-bottom: 1rem;
+}
 
-}
-.curriculum .fila{
+.curriculum .fila {
     display: flex;
+    flex-wrap: wrap; /* Permite adaptación en pantallas más pequeñas */
     justify-content: space-between;
+    gap: 2rem;
 }
-.curriculum .fila .col{
-    width: 49%;
+
+.curriculum .fila .col {
+    width: 100%;
+    max-width: 48%;
     padding: 0 20px;
 }
-.curriculum .fila .col h3{
+
+.curriculum .fila .col h3 {
     font-size: 28px;
-    font-family: 'Righteous';
+    font-family: 'Righteous', sans-serif;
+    color: #333;
     margin-bottom: 25px;
 }
-.curriculum .fila .izquierda{
-    border-right: 2px solid #252A2E;
+
+.curriculum .fila .izquierda {
+    border-right: 2px solid #ddd; /* Borde claro */
 }
-.curriculum .fila .derecha{
-    border-left: 2px solid #252A2E;
+
+.curriculum .fila .derecha {
+    border-left: 2px solid #ddd; /* Borde claro */
 }
-.curriculum .fila .item{
+
+.curriculum .fila .item {
+    background-color: #f3f3f3; /* Fondo gris claro */
     padding: 25px;
     margin-bottom: 30px;
-    background-color: #252A2E;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
 }
-.curriculum .fila .item h4{
+
+.curriculum .fila .item h4 {
     font-size: 20px;
     margin-bottom: 10px;
+    color: #333;
 }
-.curriculum .fila .item .casa{
-    color: yellow;
-    font-size: 22px;
+
+.curriculum .fila .item .casa {
+    color: #0073e6; /* Color azul para el nombre de la institución */
+    font-size: 18px;
     font-weight: bold;
     display: block;
 }
-.curriculum .fila .item .fecha{
+
+.curriculum .fila .item .fecha {
     display: block;
-    color: yellow;
+    color: #666; /* Color gris para la fecha */
+    font-size: 16px;
     margin-bottom: 10px;
 }
-.curriculum .fila .item p{
-    line-height: 24px;
+
+.curriculum .fila .item p {
+    line-height: 1.6;
+    color: #666; /* Color de texto gris */
 }
-.curriculum .fila .izq{
-    border-right: 2px solid yellow;
+
+.curriculum .fila .izq {
+    border-right: 2px solid #0073e6; /* Azul */
     margin-right: 20px;
 }
-.curriculum .fila .der{
-    border-left: 2px solid yellow;
+
+.curriculum .fila .der {
+    border-left: 2px solid #0073e6; /* Azul */
     margin-left: 20px;
 }
-.curriculum .fila .item .conectori{
+
+.curriculum .fila .item .conectori {
     height: 2px;
-    background-color: yellow;
+    background-color: #0073e6;
     width: 47px;
     position: absolute;
     top: 50%;
     right: -47px;
     z-index: 5;
 }
-.curriculum .fila .item .conectori .circuloi{
+
+.curriculum .fila .item .conectori .circuloi {
     display: block;
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: yellow;
+    background-color: #0073e6;
     float: right;
     position: relative;
     bottom: 4px;
 }
-.curriculum .fila .item .conectord{
+
+.curriculum .fila .item .conectord {
     height: 2px;
-    background-color: yellow;
+    background-color: #0073e6;
     width: 47px;
     position: absolute;
     top: 50%;
     left: -47px;
     z-index: 5;
 }
-.curriculum .fila .item .conectord .circulod{
+
+.curriculum .fila .item .conectord .circulod {
     display: block;
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: yellow;
+    background-color: #0073e6;
     float: left;
     position: relative;
     bottom: 4px;
 }
 
+.curriculum .cv-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0073e6; /* Azul para el botón */
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.curriculum .cv-btn:hover {
+    background-color: #005bb5; /* Azul oscuro al pasar el cursor */
+}
+
+
 
 /* Estilos para la sección de Skills */
 .skills {
-    background: #1e2326; 
-    color: white;
+    background-color: #eaeaea;
     padding: 50px 20px;
     text-align: center;
 }
 
 .skills-header h2 {
     font-size: 40px;
-    color: #ffeb3b;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+    color: #252A2E; /* Amarillo para el título */
+    font-family: 'Righteous', sans-serif;
     margin-bottom: 30px;
 }
 
@@ -367,39 +412,103 @@ html{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
+    margin-top: 20px;
 }
 
 .skill-card {
-    background: linear-gradient(135deg, #4a00e0, #8e2de2); /* Gradiente de fondo */ 
+    background-color: #252A2E; /* Fondo oscuro en los cards */
     border-radius: 10px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .skill-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .skill-card i {
     font-size: 2.5em;
-    color: #ffeb3b;
+    color: #ffeb3b; /* Icono amarillo */
     margin-bottom: 10px;
 }
 
 .skill-card span {
     font-size: 1em;
-    color: #ffffff;
+    color: #eaeaea;
+    font-weight: bold;
+    margin-top: 5px;
 }
 
 
+
+
+/* Estilos para la sección de certificados */
+.certificados {
+    padding: 2rem;
+    background-color: #eaeaea; /* Color de fondo ligero */
+}
+
+.mis-certificados-header h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.mis-certificados-header p {
+    text-align: center;
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.certificado {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.certificado:hover {
+    transform: scale(1.02);
+}
+
+.certificado h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.certificado p {
+    color: #666;
+    margin: 0.5rem 0 1rem;
+    font-size: 0.9rem;
+}
+
+.certificado a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.certificado a:hover {
+    color: #005bb5;
+}
+
+
+
+
 /* Estilos para el footer */
-footer{
-    background-color: #1e2326;
+footer {
+    background-color: #1e2326; /* Fondo oscuro */
     color: #fff;
     padding: 30px 0 10px 0;
     text-align: center;
@@ -407,31 +516,52 @@ footer{
     width: 100%;
 }
 
-footer .redes a{
+footer .redes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+footer .redes a {
     color: #fff;
     text-decoration: none;
-    border: 1px solid #fff;
-    border-radius: 100%;
+    border: 2px solid #ffeb3b; /* Borde amarillo */
+    border-radius: 50%;
     width: 42px;
     height: 42px;
     line-height: 42px;
-    margin: 40px 5px;
     font-size: 20px;
-    transition: .3s;
+    transition: 0.3s ease;
 }
-footer .arriba{
+
+footer .redes a:hover {
+    background-color: #ffeb3b; /* Fondo amarillo al hacer hover */
+    color: #1e2326;
+    border-color: #ffeb3b;
+}
+
+footer .arriba {
     display: block;
     width: 50px;
     height: 50px;
-    background-color: rgb(83, 21, 197);
-    color: yellow;
+    background-color: #ffeb3b; /* Botón arriba en amarillo */
+    color: #1e2326;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -10px;
+    top: -25px;
     border-radius: 50%;
     line-height: 50px;
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+footer .arriba:hover {
+    background-color: #fff;
+    color: #1e2326;
+    cursor: pointer;
 }
 
 
