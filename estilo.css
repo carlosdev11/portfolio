@@ -10,9 +10,9 @@ html{
     scroll-behavior: smooth;
 }
 
-/* MENU */
+/* HEADER */
 .contenedor-header{
-    background: #1e2326;
+    background-color: #0d1117;
     position: fixed;
     width: 100%;
     top: 0;
@@ -47,10 +47,10 @@ html{
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-    color: yellow;
+    color: #1244cc;
 }
 .nav-responsive{
-    background-color: yellow;
+    background-color: black;
     color:#fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -61,7 +61,7 @@ html{
     display: flex;
     align-items: center;
     gap: 5px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: 15px;
 }
 
@@ -73,189 +73,133 @@ html{
 }
 
 .redes a:hover {
-    color: yellow /* Color en hover */
+    color: #1244cc; /* Color en hover */
 }
 .cv-btn {
     text-decoration: none;
     margin-top: 30px;
-    color: rgb(0, 0, 0);
-    background-color: white;
+    margin-left: 0px;
     padding: 10px 20px; /* Ajusto el tamaño */
     font-weight: bold;
     display: inline-block;
     text-align: center;
 }
-.cv-btn:hover {
-    background-color: yellow;
-}
 
-/* SECCION INICIO/SOBRE MI UNIFICADA */
+
+
+/* SECCIÓN INICIO */
 .inicio {
-    background: #eaeaea;
-    background-size: cover;
-    color: #fff;
-    padding: 50px 20px;
+    background-color: #0d1117;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 20px;
 }
 
 .inicio-contenido {
     display: flex;
-    flex-direction: row;
-    gap: 150px;
-    max-width: 1000px;
-    width: 100%;
+    max-width: 1200px;
+    width: 90%;
+    align-items: center;
+    gap: 40px;
 }
 
-/* Estilos de contenido para la parte izquierda */
-.contenido-banner {
+.contenedor-img {
     flex: 1;
-    padding: 20px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 
-.contenido-banner img {
-    border: 8px solid #333;
-    width: 80%;
-    border-radius: 50%;
+.contenedor-img img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.contenido-texto {
+    flex: 2;
+}
+
+.contenido-texto h1 {
+    font-size: 36px;
+    color: white;
+    font-family: 'Righteous', sans-serif;
     margin-bottom: 20px;
 }
 
-.contenido-banner h1 {
-    font-size: 46px;
-    color: #333;
-    font-family: 'Righteous', sans-serif;
-    margin-top: 10px;
+.contenido-texto p {
+    font-size: 18px;
+    color: #b3b3b3;
+    line-height: 1.8;
+    margin-bottom: 30px;
 }
 
-.contenido-banner h2 {
-    font-size: 20px;
-    font-weight: 300;
-    color: #ffffff;
-    margin-bottom: 15px;
-}
-
-.redes {
-    margin-top: 10px;
-}
-
-.redes a {
-    color: #1244cc;
-    border: 2px solid #1244cc;
-    border-radius: 50%;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    margin: 0 5px;
-    font-size: 20px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.redes a:hover {
-    background-color: #1244cc;
-    color: #1e2326;
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .cv-btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 30px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
     background-color: #1244cc;
-    border-radius: 25px;
-    transition: background-color 0.3s;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .cv-btn:hover {
-    background-color: #ffffff;
-    color: #1244cc;
+    background-color: #0a328c;
 }
 
-/* Estilos de contenido para la parte derecha */
-.contenido-sobre-mi {
-    flex: 1;
-    padding: 20px;
+.redes {
+    display: flex;
+    gap: 10px;
+}
+
+.redes a {
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.redes a:hover {
     background-color: white;
-    border-radius: 20px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
-    text-align: left;
-}
-
-.contenido-sobre-mi h2 {
-    font-size: 36px;
     color: #1244cc;
-    font-family: 'Righteous', sans-serif;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.contenido-sobre-mi p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-}
-
-.contenido-sobre-mi p span {
-    color: #1244cc;
-    font-weight: bold;
-}
-
-.datos-personales {
-    margin-top: 20px;
-}
-
-.datos-personales h3 {
-    font-size: 24px;
-    color: #1244cc;
-    margin-bottom: 15px;
-}
-
-.datos-personales ul {
-    list-style: none;
-    padding: 0;
-    color: #ffffff;
-}
-
-.datos-personales ul li {
-    font-size: 18px;
-    margin: 8px 0;
-}
-
-.datos-personales ul li strong {
-    color: #1244cc;
-    width: 150px;
-    display: inline-block;
 }
 
 
 
-
-/* SECCION CURRICULUM */
+/* SECCIÓN CURRÍCULUM */
 .curriculum {
     padding: 50px 20px;
-    background-color: #eaeaea; /* Color de fondo claro similar a la sección de certificados */
-    color: #333; /* Color de texto oscuro */
+    background-color: #0d1117; /* Fondo oscuro */
 }
 
 .curriculum .contenido-seccion {
-    background-color: #eaeaea; /* Fondo blanco para la tarjeta principal */
-    color: #333; /* Texto en color oscuro */
+    background-color: #161b22; /* Fondo más oscuro para las tarjetas */
+    color: #e6e6e6; /* Texto claro */
     padding: 50px 20px;
     text-align: center;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .curriculum h2 {
     font-size: 40px;
-    color: #333; /* Color oscuro para el título */
+    color: #ffffff; /* Texto blanco */
     font-family: 'Righteous', sans-serif;
     text-align: center;
     padding: 20px 0;
@@ -264,7 +208,7 @@ html{
 
 .curriculum .fila {
     display: flex;
-    flex-wrap: wrap; /* Permite adaptación en pantallas más pequeñas */
+    flex-wrap: wrap; /* Adaptación para pantallas pequeñas */
     justify-content: space-between;
     gap: 2rem;
 }
@@ -278,35 +222,32 @@ html{
 .curriculum .fila .col h3 {
     font-size: 28px;
     font-family: 'Righteous', sans-serif;
-    color: #333;
+    color: #e6e6e6;
     margin-bottom: 25px;
 }
 
-.curriculum .fila .izquierda {
-    border-right: 2px solid #ddd; /* Borde claro */
-}
-
+.curriculum .fila .izquierda,
 .curriculum .fila .derecha {
-    border-left: 2px solid #ddd; /* Borde claro */
+    border: none; /* Eliminamos bordes para un estilo más minimalista */
 }
 
 .curriculum .fila .item {
-    background-color: #f3f3f3; /* Fondo gris claro */
+    background-color: #21262d; /* Fondo gris oscuro para los ítems */
     padding: 25px;
     margin-bottom: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     position: relative;
 }
 
 .curriculum .fila .item h4 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #333;
+    color: #ffffff;
 }
 
 .curriculum .fila .item .casa {
-    color: #0073e6; /* Color azul para el nombre de la institución */
+    color: #58a6ff; /* Azul claro para el nombre de la institución */
     font-size: 18px;
     font-weight: bold;
     display: block;
@@ -314,64 +255,42 @@ html{
 
 .curriculum .fila .item .fecha {
     display: block;
-    color: #666; /* Color gris para la fecha */
+    color: #8b949e; /* Gris claro para las fechas */
     font-size: 16px;
     margin-bottom: 10px;
 }
 
 .curriculum .fila .item p {
     line-height: 1.6;
-    color: #666; /* Color de texto gris */
+    color: #c9d1d9; /* Texto gris claro */
 }
 
-.curriculum .fila .izq {
-    border-right: 2px solid #0073e6; /* Azul */
-    margin-right: 20px;
-}
-
-.curriculum .fila .der {
-    border-left: 2px solid #0073e6; /* Azul */
-    margin-left: 20px;
+/* Conectores para ítems */
+.curriculum .fila .item .conectori,
+.curriculum .fila .item .conectord {
+    height: 2px;
+    background-color: #58a6ff; /* Azul claro */
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
 }
 
 .curriculum .fila .item .conectori {
-    height: 2px;
-    background-color: #0073e6;
-    width: 47px;
-    position: absolute;
-    top: 50%;
     right: -47px;
-    z-index: 5;
-}
-
-.curriculum .fila .item .conectori .circuloi {
-    display: block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: #0073e6;
-    float: right;
-    position: relative;
-    bottom: 4px;
 }
 
 .curriculum .fila .item .conectord {
-    height: 2px;
-    background-color: #0073e6;
-    width: 47px;
-    position: absolute;
-    top: 50%;
     left: -47px;
-    z-index: 5;
 }
 
+.curriculum .fila .item .conectori .circuloi,
 .curriculum .fila .item .conectord .circulod {
     display: block;
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #0073e6;
-    float: left;
+    background-color: #58a6ff; /* Azul claro */
     position: relative;
     bottom: 4px;
 }
@@ -380,7 +299,7 @@ html{
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #0073e6; /* Azul para el botón */
+    background-color: #1244cc; /* Azul intenso para el botón */
     color: #fff;
     font-weight: bold;
     border-radius: 5px;
@@ -389,21 +308,31 @@ html{
 }
 
 .curriculum .cv-btn:hover {
-    background-color: #005bb5; /* Azul oscuro al pasar el cursor */
+    background-color: #0a328c; /* Azul más oscuro al pasar el cursor */
 }
+
 
 
 
 /* Estilos para la sección de Skills */
 .skills {
-    background-color: #eaeaea;
+    background-color: #0d1117; /* Fondo oscuro */
     padding: 50px 20px;
     text-align: center;
 }
 
+.skills .skills-header {
+    background-color: #161b22; /* Fondo ligeramente más claro para destacar */
+    color: #e6e6e6; /* Texto claro */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
 .skills-header h2 {
     font-size: 40px;
-    color: #252A2E; /* Amarillo para el título */
+    color: #ffffff; /* Blanco para el título */
     font-family: 'Righteous', sans-serif;
     margin-bottom: 30px;
 }
@@ -416,30 +345,30 @@ html{
 }
 
 .skill-card {
-    background-color: #252A2E; /* Fondo oscuro en los cards */
+    background-color: #21262d; /* Fondo gris oscuro para las tarjetas */
     border-radius: 10px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .skill-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7); /* Sombra más definida al hacer hover */
 }
 
 .skill-card i {
     font-size: 2.5em;
-    color: #ffeb3b; /* Icono amarillo */
+    color: #58a6ff; /* Azul claro para los iconos */
     margin-bottom: 10px;
 }
 
 .skill-card span {
     font-size: 1em;
-    color: #eaeaea;
+    color: #e6e6e6; /* Texto claro */
     font-weight: bold;
     margin-top: 5px;
 }
@@ -450,65 +379,77 @@ html{
 /* Estilos para la sección de certificados */
 .certificados {
     padding: 2rem;
-    background-color: #eaeaea; /* Color de fondo ligero */
+    background-color: #0d1117; /* Fondo oscuro */
 }
 
-.mis-certificados-header h2 {
+.certificados .seccion-certificados {
+    background-color: #161b22; /* Fondo más claro para la tarjeta principal */
+    color: #e6e6e6; /* Texto claro */
+    padding: 10px 30px;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra más definida */
+}
+
+.certificados .certificados-header {
+    background-color: transparent; /* Fondo ligeramente más claro */
+    color: #e6e6e6; /* Texto claro */
+    padding: 50px 20px;
     text-align: center;
-    color: #333;
-    font-size: 2rem;
+}
+
+.certificados-header h2 {
+    text-align: center;
+    color: #ffffff; /* Blanco puro para el título */
+    font-family: 'Righteous', sans-serif;
+    font-size: 40px;
     margin-bottom: 0.5rem;
 }
 
-.mis-certificados-header p {
-    text-align: center;
-    color: #666;
-    font-size: 1rem;
-    margin-bottom: 2rem;
-}
-
 .certificado {
-    background-color: #fff;
+    background-color: #21262d; /* Fondo gris oscuro para los certificados */
     padding: 1.5rem;
     margin-bottom: 1rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra definida */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .certificado:hover {
     transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7); /* Sombra más pronunciada en hover */
 }
 
 .certificado h3 {
     margin: 0;
-    color: #333;
+    color: #e6e6e6; /* Títulos claros */
     font-size: 1.5rem;
 }
 
 .certificado p {
-    color: #666;
+    color: #c9d1d9; /* Texto gris claro */
     margin: 0.5rem 0 1rem;
     font-size: 0.9rem;
 }
 
 .certificado a {
-    color: #0073e6;
+    color: #58a6ff; /* Azul claro para enlaces */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .certificado a:hover {
-    color: #005bb5;
+    color: #1f6feb; /* Azul más oscuro en hover */
 }
+
 
 
 
 
 /* Estilos para el footer */
 footer {
-    background-color: #1e2326; /* Fondo oscuro */
+    background-color: #0d1117;
     color: #fff;
     padding: 30px 0 10px 0;
     text-align: center;
@@ -524,28 +465,21 @@ footer .redes {
 }
 
 footer .redes a {
-    color: #fff;
+    color: white;
+    font-size: 1.5em;
     text-decoration: none;
-    border: 2px solid #ffeb3b; /* Borde amarillo */
-    border-radius: 50%;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    font-size: 20px;
-    transition: 0.3s ease;
+    transition: color 0.3s;
 }
 
 footer .redes a:hover {
-    background-color: #ffeb3b; /* Fondo amarillo al hacer hover */
-    color: #1e2326;
-    border-color: #ffeb3b;
+    background-color: white; /* Fondo azul al hacer hover */
 }
 
 footer .arriba {
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #ffeb3b; /* Botón arriba en amarillo */
+    background-color: #0073e6; /* Botón arriba en amarillo */
     color: #1e2326;
     position: absolute;
     left: 50%;

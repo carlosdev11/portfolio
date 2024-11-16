@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"/> <!-- Para los iconos -->
-    <title>Portfolio Carlos</title>
+    <title>Portfolio de Carlos</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -17,10 +17,8 @@
             <nav id="nav">
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
                     <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
                     <li><a href="#skills" onclick="seleccionar()">TECNOLOGÍAS</a></li>
-                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
                     <li><a href="#certificados" onclick="seleccionar()">CERTIFICADOS</a></li>
                 </ul>
             </nav>
@@ -31,39 +29,28 @@
     </div>
 
 
-    <!-- SECCION INICIO/SOBRE MI -->
+    <!-- SECCIÓN INICIO/SOBRE MÍ -->
     <section id="inicio" class="inicio">
         <div class="inicio-contenido">
-            <div class="contenido-banner">
-                <div class="contenedor-img">
-                    <img src="img/foto curriculumq.png" alt="Foto de Carlos Primo">
-                </div>
-                <h1>CARLOS PRIMO</h1>
-                <h2>Desarrollador de Software - Junior</h2>
-                <div class="redes">
-                    <a href="https://github.com/carlosdev11" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/carlos-primo-rico/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <a href="Currículum CarlosDev.pdf" target="_blank" class="cv-btn"> Descargar CV <i class="fa-solid fa-download"></i></a>
+            <div class="contenedor-img">
+                <img src="img/foto curriculumq.png" alt="Foto de Carlos Primo">
             </div>
-            
-            <div class="contenido-sobre-mi">
-                <h2>Sobre Mí</h2>
-                <p><span>Hola, soy Carlos Primo.</span> Soy un Desarrollador Junior apasionado por la tecnología y el aprendizaje continuo. 
-                A lo largo de mi formación he adquirido conocimientos en diversas áreas del desarrollo web y de software, incluyendo HTML, CSS, JavaScript en el front-end y Java, C#, Pascal, Kotlin, y bases de datos en el back-end. Me gusta enfrentar nuevos retos, resolver problemas y trabajar en proyectos que me permitan crecer tanto profesional como personalmente.</p>
-                
-                <div class="datos-personales">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li><strong>Cumpleaños</strong> 12-07-2002</li>
-                        <li><strong>Teléfono</strong> 688705035</li>
-                        <li><strong>Email</strong> carlosprimorico02@gmail.com</li>
-                        <li><strong>Población</strong> Petrer, Alicante</li>
-                    </ul>
+            <div class="contenido-texto">
+                <h1>Carlos Primo — Desarrollador de Software</h1>
+                <p>Soy un Desarrollador Junior apasionado por la tecnología y el aprendizaje continuo. A lo largo de mi formación he adquirido conocimientos en front-end (HTML, CSS, JavaScript) y back-end (Java, C#, Pascal, Kotlin, bases de datos). Me gusta enfrentar nuevos retos, resolver problemas y trabajar en proyectos que me permitan crecer profesional y personalmente.</p>
+                <div class="acciones">
+                    <a href="Currículum CarlosDev.pdf" target="_blank" class="cv-btn">Descargar CV <i class="fa-solid fa-download"></i></a>
+                    <div class="redes">
+                        <a href="https://github.com/carlosdev11" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/carlos-primo-rico/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/__carlos.pr/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
 
 
 
@@ -125,39 +112,40 @@
     </section>
 
     <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
+    <section id="skills" class="skills">
         <div class="skills-header">
-            <h2><i class="fas fa-laptop-code"></i> Tecnologías</h2>
-        </div>
-        <div class="skills-grid">
-            <!-- Cada div representa una tarjeta de habilidad -->
-            <div class="skill-card">
-                <i class="fab fa-python"></i>
-                <span>Python</span>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-java"></i>
-                <span>Java</span>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-js"></i>
-                <span>JavaScript</span>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-html5"></i>
-                <span>HTML</span>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-css3-alt"></i>
-                <span>CSS</span>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-pascal"></i>
-                <span>Pascal</span>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-c#"></i>
-                <span>C#</span>
+            <h2>Tecnologías</h2>
+
+            <div class="skills-grid">
+                <!-- Cada div representa una tarjeta de habilidad -->
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-java"></i>
+                    <span>Java</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-pascal"></i>
+                    <span>Pascal</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-c#"></i>
+                    <span>C#</span>
+                </div>
             </div>
         </div>
     </section>
@@ -165,31 +153,35 @@
 
 
 
-    <!-- SECCION CERTIFICADS / titulos -->
+    <!-- SECCION CERTIFICADS -->
     <section class="certificados" id="certificados">
-        <div class="mis-certificados-header">
-            <h2>Mis certificados</h2>
-            <p>Aquí puedes ver algunos de los certificados que he obtenido en cursos online.</p>
-        </div>
-        <!-- Contenedor de un certificado individual -->
-        <div class="certificado">
-            <h3>Curso de Web Scraping usando Python</h3>
-            <p>Emitido por: Udemy - Octubre 2024</p>
-            <a href="enlace-al-certificado-1" target="_blank">Ver certificado</a>
-        </div>
-        
-        <div class="certificado">
-            <h3>Como crear tu propia tienda online con shopify</h3>
-            <p>Emitido por: Udemy - Octubre 2024</p>
-            <a href="enlace-al-certificado-2" target="_blank">Ver certificado</a>
-        </div>
+        <div class="seccion-certificados">
+            <div class="certificados-header">
+               <h2>Mis certificados</h2>
+                <p>Aquí puedes ver algunos de los certificados que he obtenido en cursos online.</p> 
+            </div>
+            
+            <!-- Contenedor de un certificado individual -->
+            <div class="certificado">
+                <h3>Curso de Web Scraping usando Python</h3>
+                <p>Emitido por: Udemy - Octubre 2024</p>
+                <a href="enlace-al-certificado-1" target="_blank">Ver certificado</a>
+            </div>
+            
+            <div class="certificado">
+                <h3>Como crear tu propia tienda online con shopify</h3>
+                <p>Emitido por: Udemy - Octubre 2024</p>
+                <a href="enlace-al-certificado-2" target="_blank">Ver certificado</a>
+            </div>
 
-        <div class="certificado">
-            <h3>Universidad de Python</h3>
-            <p>Emitido por: Coursera - Junio 2023</p>
-            <a href="enlace-al-certificado-2" target="_blank">Ver certificado</a>
+            <div class="certificado">
+                <h3>Universidad de Python</h3>
+                <p>Emitido por: Coursera - Junio 2023</p>
+                <a href="enlace-al-certificado-2" target="_blank">Ver certificado</a>
+            </div>
         </div>
     </section>
+
 
     <!-- footer -->
     <footer>
@@ -197,8 +189,9 @@
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/__carlos.pr/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/carlosdev11" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/carlos-primo-rico/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
     </footer>
 
